@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>lenachan-pp | GitHub Pages</title>
+    <title>lenachan-pp | Bilingual GitHub Pages</title>
     <meta
       name="description"
-      content="A personal landing page for lenachan-pp, published with GitHub Pages."
+      content="A bilingual personal landing page for lenachan-pp, published with GitHub Pages."
     />
     <style>
       :root {
@@ -149,6 +149,19 @@
         line-height: 1.8;
       }
 
+      .bilingual {
+        display: grid;
+        gap: 6px;
+      }
+
+      .bilingual .zh {
+        font-size: 1.04em;
+      }
+
+      .bilingual .en {
+        color: var(--muted);
+      }
+
       .actions {
         display: flex;
         flex-wrap: wrap;
@@ -244,6 +257,11 @@
         text-transform: uppercase;
         color: var(--accent-2);
         font-weight: 700;
+      }
+
+      .meta-value {
+        display: grid;
+        gap: 4px;
       }
 
       .section-grid {
@@ -347,21 +365,25 @@
           <span class="dot"></span>
           lenachan-pp
         </div>
-        <div class="tag">Published on GitHub Pages</div>
+        <div class="tag">已发布于 GitHub Pages · Published on GitHub Pages</div>
       </header>
 
       <main class="hero">
         <section class="card intro fade-up delay-1">
-          <p class="eyebrow">Personal Landing Page</p>
-          <h1>Hello,<br />I am lenachan-pp.</h1>
-          <p class="lede">
-            This is the first public corner of my GitHub presence: a clean, living
-            introduction page for future projects, experiments, and ideas worth
-            sharing. More work is on the way.
-          </p>
+          <p class="eyebrow">个人主页 · Personal Landing Page</p>
+          <h1>你好，<br />我是 lenachan-pp.</h1>
+          <div class="lede bilingual">
+            <p class="zh">
+              这是我在 GitHub 上的第一张公开名片: 一个简洁、持续生长中的个人介绍页，用来承接之后的项目、实验和想法。
+            </p>
+            <p class="en">
+              This is the first public corner of my GitHub presence: a clean, living
+              introduction page for future projects, experiments, and ideas worth sharing.
+            </p>
+          </div>
           <div class="actions">
-            <a class="button primary" href="https://github.com/lenachan-pp">View GitHub</a>
-            <a class="button secondary" href="#about">Read Intro</a>
+            <a class="button primary" href="https://github.com/lenachan-pp">访问 GitHub · View GitHub</a>
+            <a class="button secondary" href="#about">了解更多 · Read Intro</a>
           </div>
         </section>
 
@@ -370,79 +392,104 @@
             <img
               class="avatar"
               src="https://avatars.githubusercontent.com/u/277785379?v=4"
-              alt="GitHub avatar for lenachan-pp"
+              alt="lenachan-pp 的 GitHub 头像"
             />
             <div>
-              <h2 class="mini-title">GitHub Identity</h2>
-              <p class="mini-copy">Fresh profile, ready for new repositories.</p>
+              <h2 class="mini-title">GitHub 身份卡 · GitHub Identity</h2>
+              <p class="mini-copy">一个刚刚开始公开构建的新主页。 A fresh profile, ready for new repositories.</p>
             </div>
           </div>
 
           <div class="meta-grid">
             <div class="meta-box">
-              <span class="meta-label">Username</span>
-              <span class="meta">lenachan-pp</span>
+              <span class="meta-label">用户名 · Username</span>
+              <span class="meta meta-value">
+                <span>lenachan-pp</span>
+                <span>GitHub handle</span>
+              </span>
             </div>
             <div class="meta-box">
-              <span class="meta-label">Started</span>
-              <span class="meta">April 2026</span>
+              <span class="meta-label">起点 · Started</span>
+              <span class="meta meta-value">
+                <span>2026 年 4 月</span>
+                <span>April 2026</span>
+              </span>
             </div>
             <div class="meta-box">
-              <span class="meta-label">Focus</span>
-              <span class="meta">Building a public home on GitHub</span>
+              <span class="meta-label">当前重点 · Focus</span>
+              <span class="meta meta-value">
+                <span>在 GitHub 上建立公开主页</span>
+                <span>Building a public home on GitHub</span>
+              </span>
             </div>
             <div class="meta-box">
-              <span class="meta-label">Next Step</span>
-              <span class="meta">Publish projects and write a fuller bio</span>
+              <span class="meta-label">下一步 · Next Step</span>
+              <span class="meta meta-value">
+                <span>发布项目并补全更完整的自我介绍</span>
+                <span>Publish projects and write a fuller bio</span>
+              </span>
             </div>
           </div>
 
           <div class="status">
             <span class="dot"></span>
-            <span><strong id="status-text">Sketching the next idea.</strong></span>
+            <span><strong id="status-text">正在构思下一个想法。 Sketching the next idea.</strong></span>
           </div>
         </aside>
       </main>
 
       <section class="section-grid" id="about">
         <article class="card section-card fade-up delay-1">
-          <h2>About This Page</h2>
-          <p>
-            GitHub Pages gives this account a stable public address. Instead of
-            waiting for the perfect profile, this page starts simple and leaves room
-            to grow with real work.
-          </p>
+          <h2>关于这个页面 · About This Page</h2>
+          <div class="bilingual">
+            <p class="zh">
+              GitHub Pages 给这个账号提供了一个稳定的公开地址。与其等“完美版本”再开始，不如先上线，再慢慢把真实作品填进来。
+            </p>
+            <p class="en">
+              GitHub Pages gives this account a stable public address. Instead of waiting
+              for the perfect profile, this page starts simple and leaves room to grow with real work.
+            </p>
+          </div>
         </article>
 
         <article class="card section-card fade-up delay-2">
-          <h2>What Will Show Up Here</h2>
-          <p>
-            New repositories, experiments, tools, notes, and a clearer story about
-            what I am making. Think of this as the front door before the studio is
-            fully arranged.
-          </p>
+          <h2>这里会出现什么 · What Will Show Up Here</h2>
+          <div class="bilingual">
+            <p class="zh">
+              之后这里会放上新的仓库、实验、工具、笔记，以及更清晰的个人方向介绍。你可以把它看作工作室整理完成前的前厅。
+            </p>
+            <p class="en">
+              New repositories, experiments, tools, notes, and a clearer story about what I am making.
+              Think of this as the front door before the studio is fully arranged.
+            </p>
+          </div>
         </article>
 
         <article class="card section-card fade-up delay-3">
-          <h2>Connect</h2>
-          <p>
-            The easiest way to follow along right now is through GitHub.
-            As more work becomes public, this page can expand into a full portfolio.
-          </p>
+          <h2>联系与关注 · Connect</h2>
+          <div class="bilingual">
+            <p class="zh">
+              现在最直接的关注方式就是 GitHub。随着更多内容公开，这个页面也可以继续扩展成完整的作品集主页。
+            </p>
+            <p class="en">
+              The easiest way to follow along right now is through GitHub.
+              As more work becomes public, this page can expand into a full portfolio.
+            </p>
+          </div>
         </article>
       </section>
 
       <footer class="footer fade-up delay-3">
-        <p class="footer-note">Made as a lightweight static site and deployed with GitHub Pages.</p>
+        <p class="footer-note">使用轻量静态页构建，并发布到 GitHub Pages · Made as a lightweight static site and deployed with GitHub Pages.</p>
         <a href="https://github.com/lenachan-pp">github.com/lenachan-pp</a>
       </footer>
     </div>
 
     <script>
       const messages = [
-        "Sketching the next idea.",
-        "Setting up a new public home.",
-        "Preparing future projects for launch.",
+        "正在构思下一个想法。 Sketching the next idea.",
+        "正在搭建新的公开主页。 Setting up a new public home.",
+        "正在为接下来的项目做准备。 Preparing future projects for launch.",
       ];
 
       const statusText = document.getElementById("status-text");
